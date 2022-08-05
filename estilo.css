@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans&family=Pacifico&display=swap');
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 150px;
+    background: #FFDFD2;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    color: #53b7d2;
+    flex: 20%;
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-left: 5%;
+
+}
+
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 30px;
+    margin-left: 10;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu a {
+    color: #53b7d2;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.menu a:hover {
+    color: #FC8A94;
+    border-bottom: 4px solid #95cfe0;
+    ;
+}
+
+#botao {
+    background: #53b7d2;
+    padding: 10px 10px;
+    color: rgb(255, 240, 242);
+    border-radius: 15px;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#botao:hover {
+    border: none;
+    color: white;
+    background: #FC8A94;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: auto;
+    background: white;
+    padding-top: 200px;
+
+}
+
+.headline {
+    flex: 40%;
+    margin-right: 5%;
+    margin-left: 5%;
+    /* border: 1px solid black; */
+
+}
+
+.headline h2 {
+    color: #53b7d2;
+    font-size: 22px;
+
+}
+
+.headline p {
+    color: gray;
+    font-size: 20px;
+}
+
+.contato {
+    display: inline-block;
+    background: #FC8A94;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.contato:hover {
+    background: #53b7d2;
+}
+
+.img-headline {
+    flex: 40%;
+    margin-right: 3%;
+    width: 500px;
+    height: 500px;
+    background-image: url(/img/chef.jpg);
+    background-size: 590px;
+    border-radius: 100%;
+    background-position: center;
+}
+
+#servico {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    padding: 5%;
+    text-align: center;
+}
+
+#servico h2 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    color: #53b7d2;
+    text-align: center;
+    padding: 10%;
+    font-family: 'Pacifico', cursive;
+}
+
+.encomendas {
+    display: flex;
+    margin-top: 5%;
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #FF2978;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    height: 300px;
+}
+
+.card h3 {
+    color: #53b7d2
+}
+
+.texto-oculto {
+    display: none;
+}
+
+.card:hover {
+    background: #FFDFD2;
+    Color: #53b7d2;
+    padding: 40px;
+    height: auto;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+.card:hover .card-texto {
+    display: none;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.saiba-mais-btn {
+    display: none;
+}
+
+#sobre-nos {
+    display: flex;
+    flex-flow: row wrap;
+    /* background: #95cfe0;  */
+    height: auto;
+    padding: 100px;
+
+}
+
+#sobre-nos h2 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    color: #53b7d2;
+    text-align: center;
+    padding: 10%;
+    font-family: 'Pacifico', cursive;
+}
+
+.text-sobre {
+    flex: 40%;
+    margin-right: 5%;
+    margin-left: 5%;
+
+
+}
+
+.text-sobre p {
+    color: gray;
+    font-size: 20px;
+}
+
+.carrosel {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+
+
+}
+
+.carrosel ul {
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    height: 250px;
+}
+
+.carrosel li {
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide {
+    0% {
+        left: 0px;
+    }
+
+    20% {
+        left: 0px;
+    }
+
+    30% {
+        left: -440px;
+    }
+
+    50% {
+        left: -440px;
+    }
+
+    60% {
+        left: -840px;
+    }
+
+    90% {
+        left: -840px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 50px;
+    width: 220px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0 10px;
+    position: relative;
+    margin: 8px;
+}
+
+.button img {
+    margin: 5px;
+}
+
+.button span {
+    max-height: .8rem;
+}
+
+.buttons-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.instagram {
+    background: #FF2978;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+footer {
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg, #53b7d2, #95cfe0, white);
+    text-align: center;
+    color: white;
+    border-top: 5px solid #FC8A94;
+}
+
+.logo-rodape {
+    padding: 100px;
+    font-size: 20px;
+}
+
+.docurinhas {
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}

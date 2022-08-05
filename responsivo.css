@@ -1,0 +1,77 @@
+@media screen and (max-width:1024px) {
+
+
+    .navbar {
+        position: absolute;
+        top: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        margin: 0;
+        text-align: center;
+    }
+
+    .header {
+        padding-top: 50px;
+
+    }
+
+    .headline {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .headline {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .headline p {
+        text-align: center;
+    }
+
+    .img-headline {
+        max-width: 400px;
+        max-height: 400px;
+        background-size: 500px;
+    }
+
+    .card {
+        height: 450px
+    }
+
+    .card:hover {
+        padding: 20px;
+        width: 300px;
+    }
+
+    #sobre-nos {
+        display:flex;
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .carrosel {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .text-sobre {
+        width: 100%;
+        text-align: center;
+    }
+
+    .buttons-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
