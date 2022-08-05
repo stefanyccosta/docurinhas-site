@@ -123,7 +123,7 @@ body {
     margin-right: 3%;
     width: 500px;
     height: 500px;
-    background-image: url(img/chef.jpg);
+    background-image: url(./img/chef.jpg);
     background-size: 590px;
     border-radius: 100%;
     background-position: center;
