@@ -1,4 +1,4 @@
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
 
     .text-sobre p {
         font-size: 15px;
@@ -90,5 +90,8 @@
         background-size: 300px;
         border-radius: 100%;
         background-position: center;
+    }
+    .headline p{
+        text-align: justify;
     }
 }
